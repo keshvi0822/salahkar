@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Premium Black & Blues */
+  --color-black: #0A0E27;
+  --color-dark-blue: #1F4788;
+  --color-blue-light: #2563EB;
+  
+  /* Backgrounds */
+  --color-bg-soft: #F9FAFB;
+  --color-bg-pure: #FFFFFF;
+  
+  /* Text Colors */
+  --color-text-dark: #1A202C;
+  --color-text-muted: #4B5563;
+  --color-text-light: #6B7280;
+  
+  /* Accents */
+  --color-gold: #D4AF37;
+  --color-gold-light: #E8D5B7;
+  
+  /* Borders */
+  --color-border: #E5E7EB;
+  --color-border-light: #F3F4F6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #F9FAFB;
+  color: #1A202C;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+* {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0A0E27;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Premium Button Styles */
+.btn-primary {
+  @apply px-6 py-3 text-white rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg;
+  background-color: #1F4788;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 text-white rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg;
+  background-color: #2E5FA3;
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+.btn-accent {
+  @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg;
+  background-color: #D4AF37;
+  color: #0A0E27;
+}
+
+.btn-accent:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  @apply px-6 py-3 border-2 rounded-lg font-semibold transition-all duration-300;
+  border-color: #1F4788;
+  color: #1F4788;
+}
+
+.btn-outline:hover {
+  background-color: #1F4788;
+  color: white;
+}
+
+/* Card Styles */
+.card-base {
+  @apply bg-white rounded-lg shadow-sm border hover:shadow-md transition-all duration-300;
+  border-color: #E5E7EB;
+}
+
+.card-premium {
+  @apply bg-white rounded-xl shadow-md border hover:shadow-xl transition-all duration-300;
+  border-color: #E5E7EB;
+}
+
+/* Text Utilities */
+.text-heading {
+  @apply font-semibold;
+  color: #0A0E27;
+}
+
+.text-secondary {
+  color: #4B5563;
+}
+
+.text-accent {
+  @apply font-semibold;
+  color: #D4AF37;
+}
