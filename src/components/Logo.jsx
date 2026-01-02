@@ -9,7 +9,7 @@ export default function Logo({ size = "medium", showText = true }) {
   return (
     <div className="flex items-center gap-3">
       <img
-        src="/images/IMG_0255.PNG"
+        src="/images/nav_logo.png"
         alt="Salahkar Legal Platform Logo"
         className={`${sizeClasses[size]} object-contain drop-shadow-sm`}
       />

@@ -165,7 +165,7 @@ export default function Navbar() {
             whileTap={{ scale: 0.97, transition: { duration: 0.1 } }}
           >
             <img 
-              src="/IMG_0255.PNG" 
+              src="/images/nav_logo.png" 
               alt="Salahkar Logo" 
               className="h-12 w-auto object-contain"
             />
